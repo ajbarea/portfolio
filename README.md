@@ -36,5 +36,5 @@ npm run build                  // optimizes and minifies files
 ### 3. Generate static application (E.g. for hosting on https://pages.github.com/)
 
 ```
-npm run generate               // output directory: dist/
+npm run generate               // output directory: /docs (for GitHub Pages)
 ```
