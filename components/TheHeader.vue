@@ -6,8 +6,8 @@
         class="menu-icon block cursor-pointer md:hidden px-2 relative select-none" for="menu-btn"> <span
           class="bg-grey-darkest flex items-center relative"></span> </label>
       <ul class="flex justify-center list-reset m-0 w-full md:w-auto">
-        <li v-for="item in navLinks" :key="item.path"> <template v-if="item.external"> <a :to="item.path"
-              target="_blank" rel="noopener noreferrer"
+        <li v-for="item in navLinks" :key="item.name"> <template v-if="item.external"> <a :href="item.href"
+              target="_blank" rel="noopener"
               class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold text-lg md:text-2xl">
               {{ item.name }} </a> </template>
           <template v-else>
