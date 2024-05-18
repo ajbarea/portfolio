@@ -8,7 +8,8 @@
             my world of creativity, problem-solving, and engineering expertise. <br /><br /> Explore a curated selection
             of my <a href="https://ajbarea.github.io/portfolio/projects/"><i><u>projects</u></i></a> to see the
             challenges I've tackled and the solutions I've built. <br /><br /> Looking for a deeper dive into my
-            experience? My <a href="https://ajbarea.github.io/resume/"><i><u>resume</u></i></a> details my educational
+            experience? My <a href="https://ajbarea.github.io/resume/" target="_blank"><i><u>resume</u></i></a> details
+            my educational
             background and professional journey. <br /><br /> For a more personal touch, head over to my <a
                 href="https://ajbarea.github.io/portfolio/blog"><i><u>blog</u></i></a>. There, I share insights and
             musings on the ever-evolving landscape of the field, offering a glimpse into my current explorations and

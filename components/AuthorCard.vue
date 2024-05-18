@@ -10,7 +10,7 @@
           AJ Barea
         </h1>
         <div class="md:text-lg text-gray-600 dark:text-blue-100">
-          {{ siteMetadata.position }}
+          {{ siteMetadata.quote }}
         </div>
       </div>
     </div>
@@ -20,23 +20,28 @@
         <p>{{ siteMetadata.email }}</p>
       </div>
       <div class="my-2 text-gray-600 flex dark:text-blue-100">
-        <Glob />
+        <Globe />
         <p>{{ siteMetadata.location }}</p>
       </div>
       <div class="my-2 text-gray-600 flex dark:text-blue-200">
         <Github />
-        <a :href="siteMetadata.github"> {{ `GitHub @${siteMetadata.githubUser}` }}</a>
+        <a :href="siteMetadata.github" target="_blank"> {{ `GitHub @${siteMetadata.githubUser}` }}</a>
+      </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <LinkedIn />
+        <a :href="siteMetadata.linkedin" target="_blank"> {{ `LinkedIn @${siteMetadata.linkedinUser}` }}</a>
       </div>
     </div>
   </div>
 </template>
 <script>
 import Mail from "../assets/icon/mail.svg?inline";
-import Glob from "../assets/icon/glob.svg?inline";
+import Globe from "../assets/icon/glob.svg?inline";
 import Github from "../assets/icon/github_new.svg?inline";
+import LinkedIn from "../assets/icon/linkeding.svg?inline";
 import siteMetaData from "@/data/siteMetaData";
 export default {
-  components: { Mail, Glob, Github },
+  components: { Mail, Globe, Github, LinkedIn },
   data: () => {
     return { siteMetadata: siteMetaData };
   },

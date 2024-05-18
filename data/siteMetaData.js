@@ -2,8 +2,8 @@ const siteMetadata = {
   title: "AJ Barea | Computer Engineer",
   author: "AJ Barea",
   author_image: "/author.png",
-  position: "Keep coding, keep growing.",
-  location: "San Fransisco, California",
+  quote: "Keep coding, keep growing.",
+  location: "Rochester, New York",
   headerTitle: "AJ Barea",
   slogan: '"Struggle, Contend, Wriggle." - Skull Knight',
   description: "Lifelong Learner | Software Engineer with a Growth Mindset",
@@ -22,5 +22,6 @@ const siteMetadata = {
   stackoverflow: "#",
   youtube: "https://www.youtube.com/ajbarea",
   linkedin: "https://www.linkedin.com/in/aj-barea/",
+  linkedinUser: "aj-barea",
 };
 export default siteMetadata;
