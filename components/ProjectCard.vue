@@ -1,31 +1,21 @@
 <template>
   <div class="p-4 md:w-1/2 md" style="max-width: 544px">
-    <div
-      class="h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 dark:border-gray-700"
-    >
+    <div class="h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 dark:border-gray-700">
       <div class="p-6">
         <div class="flex flex-row justify-between items-center">
-          <div class="my-2"><Folder class="text-indigo-800"></Folder></div>
+          <div class="my-2">
+            <Folder class="text-indigo-800"></Folder>
+          </div>
           <div class="flex flex-row justify-between">
             <div class="mx-1">
-              <a
-                class="text-sm text-gray-500 transition hover:text-gray-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                :href="projectHref"
-                ><span class="sr-only"></span
-                ><img class="w-6 h-6" src="~assets/icon/external.svg"
-              /></a>
+              <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
+                :href="projectHref"><span class="sr-only"></span><img class="w-6 h-6"
+                  src="~assets/icon/external.svg" /></a>
             </div>
             <div class="mx-1">
-              <a
-                class="text-sm text-gray-500 transition hover:text-gray-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                :href="projectGithub"
-                ><span class="sr-only">github</span
-                ><img class="w-6 h-6" src="~assets/icon/github_new.svg"
-              /></a>
+              <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer"
+                :href="projectGithub"><span class="sr-only">github</span><img class="w-6 h-6"
+                  src="~assets/icon/github_new.svg" /></a>
             </div>
           </div>
         </div>
