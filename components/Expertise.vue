@@ -1,143 +1,14 @@
 <template>
   <div class="mt-8">
-    <div class="mt-2">
+    <div v-for="(category, index) in categories" :key="index" class="mt-4">
       <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-        Frontend
+        {{ category.name }}
       </h2>
-      <ul class="flex flex-wrap gap-4 items-center">
-        <li class="flex items-center">
-          <angular class="h-10 w-10">
-            <title>Angular</title>
-          </angular>
-        </li>
-        <li class="flex items-center">
-          <bootstrap class="h-10 w-10">
-            <title>Bootstrap</title>
-          </bootstrap>
-        </li>
-        <li class="flex items-center">
-          <css class="h-10 w-10">
-            <title>CSS</title>
-          </css>
-        </li>
-        <li class="flex items-center">
-          <html5 class="h-10 w-10">
-            <title>HTML</title>
-          </html5>
-        </li>
-        <li class="flex items-center">
-          <javascript class="h-10 w-10">
-            <title>JavaScript</title>
-          </javascript>
-        </li>
-        <li class="flex items-center">
-          <markdown class="h-10 w-10">
-            <title>Markdown</title>
-          </markdown>
-        </li>
-        <li class="flex items-center">
-          <nuxt class="h-10 w-10">
-            <title>Nuxt.js</title>
-          </nuxt>
-        </li>
-        <li class="flex items-center">
-          <tailwindcss class="h-10 w-10">
-            <title>Tailwind CSS</title>
-          </tailwindcss>
-        </li>
-      </ul>
-    </div>
-    <div class="mt-4">
-      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-        Backend
-      </h2>
-      <ul class="mb-6 flex flex-wrap gap-4">
-        <li class="flex items-center">
-          <c class="h-10 w-10">
-            <title>C</title>
-          </c>
-        </li>
-        <li class="flex items-center">
-          <cpp class="h-10 w-10">
-            <title>C++</title>
-          </cpp>
-        </li>
-        <li class="flex items-center">
-          <express class="h-10 w-10">
-            <title>Express.js</title>
-          </express>
-        </li>
-        <li class="flex items-center">
-          <java class="h-10 w-10">
-            <title>Java</title>
-          </java>
-        </li>
-        <li class="flex items-center">
-          <node class="h-10 w-10">
-            <title>Node.js</title>
-          </node>
-        </li>
-        <li class="flex items-center">
-          <postgres class="h-10 w-10">
-            <title>PostgreSQL</title>
-          </postgres>
-        </li>
-        <li class="flex items-center">
-          <python class="h-10 w-10">
-            <title>Python</title>
-          </python>
-        </li>
-        <li class="flex items-center">
-          <spring class="h-10 w-10">
-            <title>Spring Boot</title>
-          </spring>
-        </li>
-      </ul>
-    </div>
-    <div class="mt-4">
-      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-        Design Tools
-      </h2>
-      <ul class="mb-6 flex flex-wrap gap-4">
-        <li class="flex items-center">
-          <chrome class="h-10 w-10">
-            <title>Chrome</title>
-          </chrome>
-        </li>
-        <li class="flex items-center">
-          <github class="h-10 w-10">
-            <title>GitHub</title>
-          </github>
-        </li>
-        <li class="flex items-center">
-          <linux class="h-10 w-10">
-            <title>Linux</title>
-          </linux>
-        </li>
-        <li class="flex items-center">
-          <npm class="h-10 w-10">
-            <title>npm</title>
-          </npm>
-        </li>
-        <li class="flex items-center">
-          <pycharm class="h-10 w-10">
-            <title>PyCharm</title>
-          </pycharm>
-        </li>
-        <li class="flex items-center">
-          <trello class="h-10 w-10">
-            <title>Trello</title>
-          </trello>
-        </li>
-        <li class="flex items-center">
-          <visualstudio class="h-10 w-10">
-            <title>Microsoft Visual Studio</title>
-          </visualstudio>
-        </li>
-        <li class="flex items-center">
-          <vscode class="h-10 w-10">
-            <title>Visual Studio Code</title>
-          </vscode>
+      <ul class="flex flex-wrap gap-4 items-center mb-6">
+        <li v-for="(tech, techIndex) in category.technologies" :key="techIndex" class="flex items-center">
+          <component :is="tech.component" class="h-10 w-10">
+            <title>{{ tech.name }}</title>
+          </component>
         </li>
       </ul>
     </div>
@@ -195,5 +66,50 @@ export default {
     visualstudio,
     vscode,
   },
+  data() {
+    return {
+      categories: [
+        {
+          name: 'Frontend',
+          technologies: [
+            { name: 'Angular', component: 'angular' },
+            { name: 'Bootstrap', component: 'bootstrap' },
+            { name: 'CSS', component: 'css' },
+            { name: 'HTML', component: 'html5' },
+            { name: 'JavaScript', component: 'javascript' },
+            { name: 'Markdown', component: 'markdown' },
+            { name: 'Nuxt.js', component: 'nuxt' },
+            { name: 'Tailwind CSS', component: 'tailwindcss' },
+          ]
+        },
+        {
+          name: 'Backend',
+          technologies: [
+            { name: 'C', component: 'c' },
+            { name: 'C++', component: 'cpp' },
+            { name: 'Express.js', component: 'express' },
+            { name: 'Java', component: 'java' },
+            { name: 'Node.js', component: 'node' },
+            { name: 'PostgreSQL', component: 'postgres' },
+            { name: 'Python', component: 'python' },
+            { name: 'Spring Boot', component: 'spring' },
+          ]
+        },
+        {
+          name: 'Design Tools',
+          technologies: [
+            { name: 'Chrome', component: 'chrome' },
+            { name: 'GitHub', component: 'github' },
+            { name: 'Linux', component: 'linux' },
+            { name: 'npm', component: 'npm' },
+            { name: 'PyCharm', component: 'pycharm' },
+            { name: 'Trello', component: 'trello' },
+            { name: 'Microsoft Visual Studio', component: 'visualstudio' },
+            { name: 'Visual Studio Code', component: 'vscode' },
+          ]
+        }
+      ]
+    };
+  }
 };
 </script>

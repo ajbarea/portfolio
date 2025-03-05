@@ -15,7 +15,7 @@
           <div class="flex flex-wrap -m-4">
             <project-card v-for="item in projectsData" :key="item.title" :title="item.title"
               :description="item.description" :href="item.href" :github="item.github" :tech1="item.tech1"
-              :tech2="item.tech2" :tech3="item.tech3"></project-card>
+              :tech2="item.tech2" :tech3="item.tech3" :linkType="item.linkType"></project-card>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ const projectsData = [
     tech1: "Java",
     tech2: "Spring Boot",
     tech3: "Angular",
+    linkType: "youtube"
   },
   {
     title: "ThoughtCloud Social",
@@ -18,6 +19,7 @@ const projectsData = [
     tech1: "Java",
     tech2: "Spring Boot",
     tech3: "Angular",
+    linkType: "youtube"
   },
   {
     title: "Control of Mobile Robots",
@@ -28,6 +30,7 @@ const projectsData = [
     tech1: "Python",
     tech2: "Webots",
     tech3: "YouTube",
+    linkType: "youtube"
   },
   {
     title: "Blockchain Explorer",
@@ -38,6 +41,7 @@ const projectsData = [
     tech1: "JavaScript",
     tech2: "Node.js",
     tech3: "HTML",
+    linkType: "youtube"
   },
   {
     title: "Portfolio",
@@ -48,6 +52,7 @@ const projectsData = [
     tech1: "JavaScript",
     tech2: "Vue.js",
     tech3: "Nuxt.js",
+    linkType: "demo"
   },
   {
     title: "Resume",
@@ -58,6 +63,7 @@ const projectsData = [
     tech1: "HTML",
     tech2: "CSS",
     tech3: "CodeSwing",
+    linkType: "demo"
   },
   {
     title: "Expense Reimbursement System",
@@ -68,6 +74,7 @@ const projectsData = [
     tech1: "Java",
     tech2: "Maven",
     tech3: "PostgreSQL",
+    linkType: "youtube"
   },
 ];
 export default projectsData;
