@@ -6,7 +6,8 @@
         Projects
       </h1>
       <p class="text-lg leading-7 text-gray-500 dark:text-gray-400">
-        Some of the projects I've built or been a part of.
+        Discover projects that demonstrate my technical skills and creative problem-solving, complete with GitHub
+        repositories, YouTube presentations, and live demos.
       </p>
     </div>
     <main class="relative mb-auto">

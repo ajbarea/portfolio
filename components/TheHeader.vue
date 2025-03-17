@@ -34,6 +34,6 @@ export default {
 </script>
 <style>
 .nuxt-link-exact-active {
-  @apply text-indigo-600;
+  color: #4f46e5;
 }
 </style>

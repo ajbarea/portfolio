@@ -30,7 +30,7 @@ This portfolio site showcases the projects I've been working on as a computer en
 
 ### 1. Start hot-reloading development server (<http://localhost:3000/>)
 
-```
+```bash
 npm install                    // downloads and installs dependencies
 npm audit fix                  // fixes security vulnerabilities
 npm run dev                    // run development server
@@ -38,12 +38,12 @@ npm run dev                    // run development server
 
 ### 2. Build application for production
 
-```
+```bash
 npm run build                  // optimizes and minifies files
 ```
 
 ### 3. Generate static application (E.g. for hosting on <https://pages.github.com/>)
 
-```
+```bash
 npm run generate               // output directory: /docs (for GitHub Pages)
 ```

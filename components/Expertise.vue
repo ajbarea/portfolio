@@ -5,10 +5,12 @@
         {{ category.name }}
       </h2>
       <ul class="flex flex-wrap gap-4 items-center mb-6">
-        <li v-for="(tech, techIndex) in category.technologies" :key="techIndex" class="flex items-center">
-          <component :is="tech.component" class="h-10 w-10">
-            <title>{{ tech.name }}</title>
-          </component>
+        <li v-for="(tech, techIndex) in category.technologies" :key="techIndex">
+          <a :href="tech.url" target="_blank" class="inline-block">
+            <component :is="tech.component" class="h-10 w-10">
+              <title>{{ tech.name }}</title>
+            </component>
+          </a>
         </li>
       </ul>
     </div>
@@ -72,40 +74,40 @@ export default {
         {
           name: 'Frontend',
           technologies: [
-            { name: 'Angular', component: 'angular' },
-            { name: 'Bootstrap', component: 'bootstrap' },
-            { name: 'CSS', component: 'css' },
-            { name: 'HTML', component: 'html5' },
-            { name: 'JavaScript', component: 'javascript' },
-            { name: 'Markdown', component: 'markdown' },
-            { name: 'Nuxt.js', component: 'nuxt' },
-            { name: 'Tailwind CSS', component: 'tailwindcss' },
+            { name: 'Angular', component: 'angular', url: 'https://angular.dev/tutorials/learn-angular' },
+            { name: 'Bootstrap', component: 'bootstrap', url: 'https://getbootstrap.com/docs/5.0/getting-started/introduction/' },
+            { name: 'CSS', component: 'css', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+            { name: 'HTML', component: 'html5', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+            { name: 'JavaScript', component: 'javascript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+            { name: 'Markdown', component: 'markdown', url: 'https://www.markdownguide.org/getting-started/' },
+            { name: 'Nuxt.js', component: 'nuxt', url: 'https://nuxt.com/docs/getting-started/introduction' },
+            { name: 'Tailwind CSS', component: 'tailwindcss', url: 'https://tailwindcss.com/docs' },
           ]
         },
         {
           name: 'Backend',
           technologies: [
-            { name: 'C', component: 'c' },
-            { name: 'C++', component: 'cpp' },
-            { name: 'Express.js', component: 'express' },
-            { name: 'Java', component: 'java' },
-            { name: 'Node.js', component: 'node' },
-            { name: 'PostgreSQL', component: 'postgres' },
-            { name: 'Python', component: 'python' },
-            { name: 'Spring Boot', component: 'spring' },
+            { name: 'C', component: 'c', url: 'https://devdocs.io/c/' },
+            { name: 'C++', component: 'cpp', url: 'https://isocpp.org/get-started' },
+            { name: 'Express.js', component: 'express', url: 'https://expressjs.com/en/starter/installing.html' },
+            { name: 'Java', component: 'java', url: 'https://docs.oracle.com/en/java/' },
+            { name: 'Node.js', component: 'node', url: 'https://nodejs.org/en/docs/' },
+            { name: 'PostgreSQL', component: 'postgres', url: 'https://www.postgresql.org/docs/' },
+            { name: 'Python', component: 'python', url: 'https://docs.python.org/3/' },
+            { name: 'Spring Boot', component: 'spring', url: 'https://spring.io/projects/spring-boot' },
           ]
         },
         {
           name: 'Design Tools',
           technologies: [
-            { name: 'Chrome', component: 'chrome' },
-            { name: 'GitHub', component: 'github' },
-            { name: 'Linux', component: 'linux' },
-            { name: 'npm', component: 'npm' },
-            { name: 'PyCharm', component: 'pycharm' },
-            { name: 'Trello', component: 'trello' },
-            { name: 'Microsoft Visual Studio', component: 'visualstudio' },
-            { name: 'Visual Studio Code', component: 'vscode' },
+            { name: 'Chrome', component: 'chrome', url: 'https://developer.chrome.com/docs/devtools/' },
+            { name: 'GitHub', component: 'github', url: 'https://docs.github.com/en' },
+            { name: 'Linux', component: 'linux', url: 'https://www.linux.org/pages/download/' },
+            { name: 'npm', component: 'npm', url: 'https://docs.npmjs.com/' },
+            { name: 'PyCharm', component: 'pycharm', url: 'https://www.jetbrains.com/pycharm/learn/' },
+            { name: 'Trello', component: 'trello', url: 'https://trello.com/guide' },
+            { name: 'Microsoft Visual Studio', component: 'visualstudio', url: 'https://visualstudio.microsoft.com/' },
+            { name: 'Visual Studio Code', component: 'vscode', url: 'https://code.visualstudio.com/docs' },
           ]
         }
       ]

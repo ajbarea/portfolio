@@ -1,7 +1,7 @@
 const projectsData = [
   {
     title: "TBD Banking Application",
-    description: `TBD is a banking application built to empower users with convenient and comprehensive financial management. The application allows users to create accounts, manage login credentials, and update personal information. Users can view and manage their bank accounts, seamlessly transferring funds between them or requesting/sending money to others. TBD also provides a detailed transaction history, filterable by income or expense category, for clear financial tracking. Smart notifications keep users informed of incoming money requests, allowing for easy management. This project demonstrates expertise in full-stack development using Java for robust backend development, Spring Boot for an efficient application framework, and Angular to create a dynamic and user-friendly frontend.`,
+    description: `A user-friendly banking app enabling account creation, credentials management, and quick fund transfers. Transaction tracking and real-time notifications showcase a robust Java, Spring Boot, and Angular stack.`,
     imgSrc: "",
     href: "https://youtu.be/RiDxzmMX-qk",
     github: "https://github.com/ajbarea/tbd-banking-application",
@@ -12,7 +12,7 @@ const projectsData = [
   },
   {
     title: "ThoughtCloud Social",
-    description: `ThoughtCloud fosters meaningful connections by empowering users to share and explore ideas in a social media setting.  The platform allows users to create and personalize profiles, build a network by following others, and engage through posts, likes, and notifications.  ThoughtCloud facilitates connection with friends, family, and those who share your interests,  while opening doors to diverse perspectives.  Whether you crave sharing your own thoughts or staying in the loop, ThoughtCloud provides a dynamic space for intellectual exchange.  This project showcases proficiency in full-stack development, utilizing Java for the backend, Spring Boot for efficient application framework, and Angular for a user-friendly and interactive frontend.`,
+    description: `A social platform for sharing thoughts, building networks, and engaging with posts and notifications. Built on Java, Spring Boot, and Angular for a lively, interactive experience.`,
     imgSrc: "",
     href: "https://youtu.be/w8TgRcd1uWQ",
     github: "https://github.com/ajbarea/thought-cloud-social",
@@ -23,7 +23,7 @@ const projectsData = [
   },
   {
     title: "Control of Mobile Robots",
-    description: `This repository showcases my exploration of mobile robot control systems, developed during the Control of Mobile Robots course at USF.  Each of the six labs delves into the design and implementation of control systems using microcontrollers, sensors, and actuators.  These systems enable the robots to localize themselves within a simulated environment and navigate effectively.  World files provide detailed maps with specific landscapes and dimensions for the robots to explore.  Written entirely in Python, the code is designed to run on the free Webots software by Cyberbotics.  To gain a deeper understanding of my design choices and thought process, check out the accompanying video explanations on my YouTube channel.  This project highlights my proficiency in Python programming and my interest in robotics control systems.`,
+    description: `Explores mobile robot control systems using Python and Webots. Labs cover localization, navigation, and sensor integration, accompanied by video explainers.`,
     imgSrc: "",
     href: "https://www.youtube.com/playlist?list=PLmQVFU1FBDddYV_4IRW1zfXH6CAKuZjIM",
     github: "https://github.com/ajbarea/control-of-mobile-robots",
@@ -34,7 +34,7 @@ const projectsData = [
   },
   {
     title: "Blockchain Explorer",
-    description: `This project tackles document authentication using a custom blockchain implementation. Users can link document signatures to a private data structure on the blockchain, ensuring tamper-proof verification of the signature's authenticity.  For administrators, a real-time and historical search function empowers them to explore all transactions stored on this private blockchain. Inspired by Eric Traub's "Learn Blockchain Programming with JavaScript," this project showcases a functional admin blockchain explorer and highlights my skills in JavaScript development using Node.js and HTML to create a secure and transparent document verification system.`,
+    description: `Implements a custom blockchain for authenticating digital signatures, ensuring tamper-proof verification and real-time transaction searches. Built with JavaScript, Node.js, and HTML.`,
     imgSrc: "",
     href: "https://youtube.com/playlist?list=PLmQVFU1FBDddVvJjHuwnRp6F6vwmz01X8",
     github: "https://github.com/ajbarea/blockchain-explorer",
@@ -45,7 +45,7 @@ const projectsData = [
   },
   {
     title: "Portfolio",
-    description: `This website serves as a comprehensive window into my coding endeavors. Explore a detailed timeline outlining my learning path, delve into project details through a dedicated browser, and stay updated with my latest thoughts through a personal blog. This dynamic portfolio is built on the power of JavaScript, utilizing Vue.js and Nuxt.js for a seamless and interactive experience. Inspired by the nuxtjs-tailwind-blog by Rathik (mdrathik on GitHub), this project exemplifies my passion for web development and my commitment to clear and engaging communication.`,
+    description: `A dynamic website showcasing coding projects, timeline, and blog. Built with JavaScript, Vue.js, and Nuxt.js to highlight web development skills.`,
     imgSrc: "",
     href: "https://ajbarea.github.io/portfolio/",
     github: "https://github.com/ajbarea/portfolio",
@@ -56,7 +56,7 @@ const projectsData = [
   },
   {
     title: "Resume",
-    description: `This project presents a clean and efficient single-page website showcasing my resume.  The page provides easy access to my professional qualifications and links to relevant online profiles or documents.  Inspired by Principal Cloud Advocate Jen Looper's lecture at Microsoft's Build 2022 conference, this project highlights my understanding of web development fundamentals using HTML, CSS, and CodeSwing for a user-friendly and adaptable online presence.`,
+    description: `A single-page resume site highlighting professional qualifications and online profiles. Created with HTML, CSS, and CodeSwing for a clean, adaptable design.`,
     imgSrc: "",
     href: "https://ajbarea.github.io/resume/",
     github: "https://github.com/ajbarea/resume",
@@ -67,7 +67,7 @@ const projectsData = [
   },
   {
     title: "Expense Reimbursement System",
-    description: `This Expense Reimbursement System empowers both employees and financial managers for efficient expense tracking and approval.  Employees can submit requests for reimbursement of various work-related activities,  providing all necessary details for streamlined processing.  Financial managers have the  authority to approve or deny these pending requests within the system.  The application leverages a PostgreSQL database for secure storage of all user information and submitted requests. Built with Java and Maven, this project demonstrates expertise in  backend development and database management, creating a solution to simplify  the expense reimbursement process.`,
+    description: `A system for submitting and approving expense reimbursements, featuring employee and manager workflows. Built with Java, Maven, and PostgreSQL for efficient data handling.`,
     imgSrc: "",
     href: "https://youtu.be/t2p_fUak_Mw",
     github: "https://github.com/ajbarea/expense-reimbursement-system",
