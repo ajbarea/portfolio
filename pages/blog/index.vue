@@ -9,9 +9,11 @@
         Structured thoughts, notes, resources, and recommendations.
       </p>
     </div>
-    <div class="space-y-16">
-      <blog-item v-for="article in articles" :key="article.title" :title="article.title"
-        :description="article.description" :date="article.date" :slug="article.slug"></blog-item>
+    <div class="container py-12">
+      <div class="flex flex-wrap -m-4">
+        <blog-item v-for="article in articles" :key="article.title" :title="article.title"
+          :description="article.description" :date="article.date" :slug="article.slug"></blog-item>
+      </div>
     </div>
   </div>
 </template>
