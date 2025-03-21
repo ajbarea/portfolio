@@ -24,7 +24,24 @@
 </template>
 <script>
 export default {
-  props: ["title", "description", "date", "slug"],
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    date: {
+      type: String,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    }
+  },
   methods: {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };

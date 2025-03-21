@@ -1,7 +1,11 @@
 <template>
   <div class="scroller"> <span> gamer.<br /> engineer.<br /> otaku.<br /> developer. </span> </div>
 </template>
-<script>export default { name: 'Scroller', } </script>
+<script>
+export default {
+  name: 'Scroller'
+}
+</script>
 <style scoped>
 .scroller {
   height: 1.2em;

@@ -17,56 +17,37 @@
   </div>
 </template>
 <script>
-import angular from "../assets/devicon/angular.svg?inline";
-import bootstrap from "../assets/devicon/bootstrap.svg?inline";
-import css from "../assets/devicon/css.svg?inline";
-import html5 from "../assets/devicon/html5.svg?inline";
-import javascript from "../assets/devicon/javascript.svg?inline";
-import markdown from "../assets/devicon/markdown.svg?inline";
-import nuxt from "../assets/devicon/nuxtjs.svg?inline";
-import tailwindcss from "../assets/devicon/tailwindcss.svg?inline";
-import c from "../assets/devicon/c.svg?inline";
-import cpp from "../assets/devicon/cpp.svg?inline";
-import express from "../assets/devicon/express.svg?inline";
-import java from "../assets/devicon/java.svg?inline";
-import node from "../assets/devicon/node.svg?inline";
-import postgres from "../assets/devicon/postgresql.svg?inline";
-import python from "../assets/devicon/python.svg?inline";
-import spring from "../assets/devicon/spring.svg?inline";
-import chrome from "../assets/devicon/chrome.svg?inline";
-import github from "../assets/devicon/github.svg?inline";
-import linux from "../assets/devicon/linux.svg?inline";
-import npm from "../assets/devicon/npm.svg?inline";
-import pycharm from "../assets/devicon/pycharm.svg?inline";
-import trello from "../assets/devicon/trello.svg?inline";
-import visualstudio from "../assets/devicon/visualstudio.svg?inline";
-import vscode from "../assets/devicon/vscode.svg?inline";
+
+const importIcon = (name) => {
+  return () => import(`../assets/devicon/${name}.svg?inline`);
+};
+
 export default {
   components: {
-    angular,
-    bootstrap,
-    css,
-    html5,
-    javascript,
-    markdown,
-    nuxt,
-    tailwindcss,
-    c,
-    cpp,
-    express,
-    java,
-    node,
-    postgres,
-    python,
-    spring,
-    chrome,
-    github,
-    linux,
-    npm,
-    pycharm,
-    trello,
-    visualstudio,
-    vscode,
+    angular: importIcon('angular'),
+    bootstrap: importIcon('bootstrap'),
+    css: importIcon('css'),
+    html5: importIcon('html5'),
+    javascript: importIcon('javascript'),
+    markdown: importIcon('markdown'),
+    nuxt: importIcon('nuxtjs'),
+    tailwindcss: importIcon('tailwindcss'),
+    c: importIcon('c'),
+    cpp: importIcon('cpp'),
+    express: importIcon('express'),
+    java: importIcon('java'),
+    node: importIcon('node'),
+    postgres: importIcon('postgresql'),
+    python: importIcon('python'),
+    spring: importIcon('spring'),
+    chrome: importIcon('chrome'),
+    github: importIcon('github'),
+    linux: importIcon('linux'),
+    npm: importIcon('npm'),
+    pycharm: importIcon('pycharm'),
+    trello: importIcon('trello'),
+    visualstudio: importIcon('visualstudio'),
+    vscode: importIcon('vscode'),
   },
   data() {
     return {

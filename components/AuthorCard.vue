@@ -44,7 +44,7 @@ import LinkedIn from "../assets/icon/linkeding.svg?inline";
 import siteMetaData from "@/data/siteMetaData";
 export default {
   components: { Mail, Globe, Github, LinkedIn },
-  data: () => {
+  data() {
     return {
       siteMetadata: siteMetaData,
       imgError: false
