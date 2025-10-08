@@ -1,5 +1,12 @@
 <template>
-  <div class="scroller"> <span> gamer.<br /> engineer.<br /> otaku.<br /> developer. </span> </div>
+  <div class="scroller">
+    <span>
+      gamer.<br />
+      engineer.<br />
+      otaku.<br />
+      developer.
+    </span>
+  </div>
 </template>
 <script>
 export default {
@@ -15,7 +22,7 @@ export default {
   width: 100%;
 }
 
-.scroller>span {
+.scroller > span {
   position: absolute;
   top: 0;
   animation: slide 7s infinite;

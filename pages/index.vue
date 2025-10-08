@@ -13,26 +13,26 @@
   </div>
 </template>
 <script>
-import siteMetaData from "@/data/siteMetaData";
+import siteMetaData from '@/data/siteMetaData'
 export default {
   data() {
-    return { siteMetaData: siteMetaData };
+    return { siteMetaData }
   },
   head: {
     title: siteMetaData.title,
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: siteMetaData.description,
-      },
+        hid: 'description',
+        name: 'description',
+        content: siteMetaData.description
+      }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/portfolio/favicon.ico" },
-    ],
-  },
-};
+      { rel: 'icon', type: 'image/x-icon', href: '/portfolio/favicon.ico' }
+    ]
+  }
+}
 </script>
 <style></style>

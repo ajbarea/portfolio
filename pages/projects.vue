@@ -2,21 +2,32 @@
   <div class="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
     <div class="pt-6 pb-8 space-y-2 md:space-y-5">
       <h1
-        class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+      >
         Projects
       </h1>
       <p class="text-lg leading-7 text-gray-500 dark:text-gray-400">
-        Discover projects that demonstrate my technical skills and creative problem-solving, complete with GitHub
-        repositories, YouTube presentations, and live demos.
+        Discover projects that demonstrate my technical skills and creative
+        problem-solving, complete with GitHub repositories, YouTube
+        presentations, and live demos.
       </p>
     </div>
     <main class="relative mb-auto">
       <div class="">
         <div class="container py-12">
           <div class="flex flex-wrap -m-4">
-            <project-card v-for="item in projectsData" :key="item.title" :title="item.title"
-              :description="item.description" :href="item.href" :github="item.github" :tech1="item.tech1"
-              :tech2="item.tech2" :tech3="item.tech3" :linkType="item.linkType"></project-card>
+            <project-card
+              v-for="item in projectsData"
+              :key="item.title"
+              :title="item.title"
+              :description="item.description"
+              :href="item.href"
+              :github="item.github"
+              :tech1="item.tech1"
+              :tech2="item.tech2"
+              :tech3="item.tech3"
+              :link-type="item.linkType"
+            ></project-card>
           </div>
         </div>
       </div>
@@ -24,25 +35,25 @@
   </div>
 </template>
 <script>
-import projectsData from "../data/projects";
+import projectsData from '../data/projects'
 export default {
   data() {
-    return { projectsData: projectsData };
+    return { projectsData }
   },
   head: {
-    title: "AJ Barea | Projects",
+    title: 'AJ Barea | Projects',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: "So, what have I been learning to develop?",
-      },
+        hid: 'description',
+        name: 'description',
+        content: 'So, what have I been learning to develop?'
+      }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/portfolio/favicon.ico" },
-    ],
-  },
-};
+      { rel: 'icon', type: 'image/x-icon', href: '/portfolio/favicon.ico' }
+    ]
+  }
+}
 </script>

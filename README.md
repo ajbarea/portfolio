@@ -17,7 +17,7 @@ Portfolio site showcasing computer engineering projects, technologies, and solut
 
 ## Example
 
-![AJ Barea - Portfolio](/assets/demo.png "Screenshot of AJ Barea - Portfolio")
+![AJ Barea - Portfolio](/assets/demo.png 'Screenshot of AJ Barea - Portfolio')
 
 > Demo the live Vue portfolio here: [AJ Barea - Portfolio](https://ajbarea.github.io/portfolio/)
 
@@ -32,9 +32,9 @@ Portfolio site showcasing computer engineering projects, technologies, and solut
 
 ```bash
 npm install
-npm audit fix
 npx update-browserslist-db@latest
+npm audit fix
 npm run dev
 ```
 
-> **Note:** Deployment to GitHub Pages is automated via GitHub Actions workflow on push to `main` branch.
+> **Note:** Deployment to GitHub Pages is automated via GitHub Actions workflow.
