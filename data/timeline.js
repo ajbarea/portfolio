@@ -1,10 +1,28 @@
 export default [
     {
+        title: "Software Engineer - Federated Learning Research",
+        subtitle: "RIT - Dr. Leon Reznik, PhD Research Team",
+        timeframe: "Aug 2024 – Present",
+        description: "Engineering production-ready framework for PhD research team. Built pytest test suite achieving 91% coverage (up from 0%). Created FastAPI backend and React frontend focused on student researcher UX. Working with AI, prompt engineering, and modern software practices.",
+        skills: "Python • FastAPI • React • Pytest • Test-Driven Development • UX Design • AI/Prompt Engineering",
+        icon: "stats-dots.svg",
+        current: true
+    },
+    {
+        title: "Teaching Assistant - SWEN-755 Software Architecture",
+        subtitle: "RIT - Dr. Scott Hawker",
+        timeframe: "Aug 2024 – Present",
+        description: "Supporting graduate-level Software Architecture course. Taught full class session as substitute instructor. Mentoring students on system design, architectural patterns, and software engineering best practices.",
+        skills: "Software Architecture • Teaching • Mentoring • System Design • Public Speaking",
+        icon: "academy.svg",
+        current: true
+    },
+    {
         title: "Master of Science in Software Engineering at Rochester Institute of Technology",
-        subtitle: "",
+        subtitle: "Final Semester",
         timeframe: "Aug 2024 – Dec 2025 (Expected)",
-        description: "Pursuing advanced studies in software engineering with a focus on reinforcement learning, system architecture, full-stack development, and leadership.",
-        skills: "Python • Java • React • SQL • Software Design • System Architecture",
+        description: "Completing advanced studies in software engineering with focus on reinforcement learning, system architecture, and full-stack development.",
+        skills: "Python • Java • React • SQL • Reinforcement Learning • System Architecture",
         icon: "academy.svg",
         current: true
     },
@@ -39,7 +57,7 @@ export default [
         title: "The National Society of Leadership and Success (NSLS)",
         subtitle: "",
         timeframe: "2019",
-        description: "Selected for membership in this prestigious leadership honor society, developing leadership skills through training and networking events.",
+        description: "Selected for membership in this leadership honor society, developing leadership skills through training and networking events.",
         skills: "Leadership • Professional Development • Networking",
         icon: "trophy.svg",
         current: false
