@@ -8,12 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: write  # Required for peaceiris/actions-gh-pages
+      contents: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -28,13 +27,11 @@ jobs:
       - name: Generate static site
         run: npm run generate
 
-      - name: Add .nojekyll file
+      - name: Add .nojekyll
         run: touch ./docs/.nojekyll
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          publish_branch: gh-pages  # Deploy to gh-pages branch
-          cname: false  # Set to your custom domain if you have one
