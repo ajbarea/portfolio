@@ -1,53 +1,32 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   router: {
     base: "/portfolio/",
   },
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxt-blog",
+    title: "AJ Barea - Portfolio",
     htmlAttrs: {
       lang: "en",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "Portfolio site showcasing computer engineering projects, technologies, and solutions." },
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/portfolio/favicon.ico" },
     ],
   },
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css"],
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxt/image"],
-  vite: {
-    /* options for vite */
-    // ssr: true // enable unstable server-side rendering for development (false by default)
-    // experimentWarning: false // hide experimental warning message (disabled by default for tests)
-    vue: {
-      /* options for vite-plugin-vue2 */
-    },
-  },
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image"],
   svg: {
-    vueSvgLoader: {
-      // vue-svg-loader options
-    },
-    svgSpriteLoader: {
-      // svg-sprite-loader options
-    },
-    fileLoader: {
-      // file-loader options
-    },
+    vueSvgLoader: {},
+    svgSpriteLoader: {},
+    fileLoader: {},
   },
   content: {
     liveEdit: false,
@@ -57,7 +36,6 @@ export default {
       },
     },
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
       postcssOptions: {
