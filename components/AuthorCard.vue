@@ -33,6 +33,10 @@
         <LinkedIn />
         <a :href="siteMetadata.linkedin" target="_blank"> {{ `LinkedIn @${siteMetadata.linkedinUser}` }}</a>
       </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <YouTube />
+        <a :href="siteMetadata.youtube" target="_blank"> {{ ` YouTube @ajbarea` }}</a>
+      </div>
     </div>
   </div>
 </template>
@@ -41,9 +45,10 @@ import Mail from "../assets/icon/mail.svg?inline";
 import Globe from "../assets/icon/glob.svg?inline";
 import Github from "../assets/icon/github_new.svg?inline";
 import LinkedIn from "../assets/icon/linkeding.svg?inline";
+import YouTube from "../assets/icon/youtube.svg?inline";
 import siteMetaData from "@/data/siteMetaData";
 export default {
-  components: { Mail, Globe, Github, LinkedIn },
+  components: { Mail, Globe, Github, LinkedIn, YouTube },
   data() {
     return {
       siteMetadata: siteMetaData,
