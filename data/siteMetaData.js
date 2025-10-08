@@ -14,7 +14,7 @@ const siteMetadata = {
   siteLogo: "/author.png",
   image: "/author.png",
   socialBanner: "/static/images/twitter-card.png",
-  email: "ajb6289@rit.edu",
+  email: "ajbareaa@gmail.com",
   github: "https://github.com/ajbarea/",
   githubUser: "ajbarea",
   twitter: "#",
