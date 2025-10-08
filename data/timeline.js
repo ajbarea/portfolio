@@ -2,7 +2,7 @@ export default [
     {
         title: "Master of Science in Software Engineering at Rochester Institute of Technology",
         subtitle: "",
-        timeframe: "Aug 2024 – May 2026 (Expected)",
+        timeframe: "Aug 2024 – Dec 2025 (Expected)",
         description: "Pursuing advanced studies in software engineering with a focus on reinforcement learning, system architecture, full-stack development, and leadership.",
         skills: "Python • Java • React • SQL • Software Design • System Architecture",
         icon: "academy.svg",
