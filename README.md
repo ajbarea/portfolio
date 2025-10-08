@@ -9,7 +9,7 @@
 
 ## About
 
-This portfolio site showcases the projects I've been working on as a computer engineer. I'm excited to share my experience with cutting-edge technologies and the solutions I've helped create.
+Portfolio site showcasing computer engineering projects, technologies, and solutions.
 
 > Reference: [Rathik's NuxtJs Tailwind Blog](https://github.com/mdrathik/nuxtjs-tailwind-blog)
 
@@ -23,27 +23,18 @@ This portfolio site showcases the projects I've been working on as a computer en
 
 ## Build Versions
 
-- [ ] Node v20.3.0
-- [ ] npm 8.19.2
+- Node v22.18.0
+- npm 11.5.2
 
 ## Development
 
-### 1. Start hot-reloading development server (<http://localhost:3000/>)
+### Start hot-reloading development server (<http://localhost:3000/>)
 
 ```bash
-npm install                    // downloads and installs dependencies
-npm audit fix                  // fixes security vulnerabilities
-npm run dev                    // run development server
+npm install
+npm audit fix
+npx update-browserslist-db@latest
+npm run dev
 ```
 
-### 2. Build application for production
-
-```bash
-npm run build                  // optimizes and minifies files
-```
-
-### 3. Generate static application (E.g. for hosting on <https://pages.github.com/>)
-
-```bash
-npm run generate               // output directory: /docs (for GitHub Pages)
-```
+> **Note:** Deployment to GitHub Pages is automated via GitHub Actions workflow on push to `main` branch.
